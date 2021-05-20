@@ -12,6 +12,7 @@
         background-color: #AB88FF;
         font-family: 'Muli', sans-serif;
         margin: 0px;
+        overflow-x: hidden;
     }
     .header{
         background-color: #37285a;
@@ -78,10 +79,17 @@
         color: white;
     }
     .carousel{
-        overflow: scroll;
+        overflow-x: scroll;
         /*padding: 30px;*/
         /*position: relative;*/
         width: 100%;
+    }
+    .carousel::-webkit-scrollbar{
+        height: 10px;
+    }
+    .carousel::-webkit-scrollbar-thumb{
+        background-color: #37285a;
+        border-radius: 25px;
     }
     .carousel__container{
         margin: 70px 0px;
