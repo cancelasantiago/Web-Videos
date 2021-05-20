@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <title>Platzi Video</title>
 </head>
 <style>
     body{
         background-color: #AB88FF;
+        font-family: 'Muli', sans-serif;
         margin: 0px;
     }
     .header{
@@ -53,6 +55,28 @@
     .header__menu--profile img{
         width: 40px;
     }
+    .main{
+        margin: 70px 0px;
+        text-align: center;
+    }
+    .main h2{
+        color: white;
+    }
+    .input{
+        background-color: #AB88FF;
+        border: 2px solid white;
+        border-radius: 25px;
+        color: white;
+        font-family: 'Muli', sans-serif;
+        font-size: 15px;
+        height: 45px;
+        outline: none;
+        padding: 0px 20px;
+        width: 70%;
+    }
+    ::placeholder{
+        color: white;
+    }
 </style>
 <body>
     <header class="header">
@@ -68,5 +92,12 @@
             </ul>
         </div>
     </header>
+    <section class="main">
+        <h2>¿Qué estás buscando?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
+    <section class="carousel">
+        
+    </section>
 </body>
 </html>
