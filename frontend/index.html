@@ -77,6 +77,39 @@
     ::placeholder{
         color: white;
     }
+    .carousel{
+        overflow: scroll;
+        /*padding: 30px;*/
+        margin: 0px 30px;
+        /*position: relative;*/
+        width: 100%;
+    }
+    .carousel__container{
+        margin: 70px 0px;
+        padding-bottom: 10px;
+
+    }
+    .carousel__item{
+        background-color: slateblue;
+        border-radius: 25px;
+        cursor: pointer;
+        display: inline-block;
+        height: 250px;
+        margin-right: 5px;
+        transform-origin: center left;
+        transition: 400ms;
+        width: 200px;
+    }
+    .carousel__item:hover ~ .carousel__item{
+        transform: translate3d(100px, 0, 0);
+    }
+    .carousel__container:hover .carousel__item{
+        opacity: 0.3;
+    }
+    .carousel__container:hover .carousel__item:hover{
+        opacity: 1;
+        transform: scale(1.5);
+    }
 </style>
 <body>
     <header class="header">
@@ -97,7 +130,11 @@
         <input class="input" type="text" placeholder="Buscar...">
     </section>
     <section class="carousel">
-        
+        <div class="carousel__container">
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+        </div>
     </section>
 </body>
 </html>
