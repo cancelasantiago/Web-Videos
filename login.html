@@ -4,9 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
 <style>
+body{
+    background: linear-gradient(to bottom, #8E54E9, #4776E6);
+    background-repeat: no-repeat;
+    font-family: 'Muli', sans-serif;
+    height: 100%;
+    margin: 0px;
+}
+
+.login{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+}
+.login__container{
+    border: 2px solid  white;
+    border-radius: 20px;
+    color: white;
+    padding: 25px;
+    width: 300px;
+}
+.login__container a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login__container a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form input{
+    border-radius: 25px;
+    font-family: 'Muli', sans-serif;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+}
+.login__container--remember-me{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remember-me input[type="checkbox" i] {
+    height: 13px;
+    margin: 0px;
+    margin-right: 5px;
+}
+.login__container--social-media>div{
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    
+}
 
 </style>
 <body>
@@ -29,6 +90,7 @@
                 <div><img src="./assets/twitter-icon.webp" alt="Google">Inicia sesión con Twitter</div>
             </section>
             <p>¿No tienes cuenta? <a href="">Regístrate</a></p>
+            <a href="#">Volver al inicio</a>
         </section>
     </section>
     <footer class="footer">
