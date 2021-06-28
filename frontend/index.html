@@ -9,7 +9,8 @@
 </head>
 <style>
     body{
-        background-color: #8E2DE2;
+        background: linear-gradient(to bottom, #8E54E9, #4776E6);
+        background-repeat: no-repeat;
         font-family: 'Muli', sans-serif;
         margin: 0px;
         overflow-x: hidden;
@@ -20,10 +21,11 @@
         height: 120px;
         justify-content: space-between;
         width: 100%;
+        border-bottom-left-radius:150px;
     }
     .header__img{
         height: 70px;
-        margin-left: 10px;
+        margin-left: 25px;
         margin-top: 15px;
         width: 200px;
     }
@@ -64,7 +66,7 @@
         color: white;
     }
     .input{
-        background-color: #8E2DE2;
+        background-color: transparent;
         border: 2px solid white;
         border-radius: 25px;
         color: white;
@@ -123,6 +125,20 @@
         height: 250px;
         object-fit: cover;
         width: 200px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+    }
+    .footer a{
+        color: white;
+        text-decoration: none;
+    }
+    .footer a:hover{
+        text-decoration: underline;
     }
 </style>
 <body>
@@ -184,7 +200,7 @@
         </div>
     </section>
 </body>
-<footer>
+<footer class="footer">
     <a href="https://icons8.com/icon/44036/play">Play icon by Icons8</a>
     <a href="https://icons8.com/icon/44037/plus">Plus icon by Icons8</a>
 </footer>
